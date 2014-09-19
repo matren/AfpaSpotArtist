@@ -1,0 +1,29 @@
+{
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"
+  },
+  "genres" : [ "funk metal", "funk rock" ],
+  "href" : "https://api.spotify.com/v1/artists/0L8ExT028jH3ddEcZwqJJ5",
+  "id" : "0L8ExT028jH3ddEcZwqJJ5",
+  "images" : [ {
+    "height" : 989,
+    "url" : "https://i.scdn.co/image/63815f898b95f2b24b3fcb9b6af4d2ed1b92270c",
+    "width" : 1000
+  }, {
+    "height" : 633,
+    "url" : "https://i.scdn.co/image/44bf052e2b615473eeb3d0141148cd282b8f6fd1",
+    "width" : 640
+  }, {
+    "height" : 198,
+    "url" : "https://i.scdn.co/image/4377bdceba2519e4cfcd6b257e8c62101c55a340",
+    "width" : 200
+  }, {
+    "height" : 63,
+    "url" : "https://i.scdn.co/image/65baa288076b6df7702853a8b1da366d5b890244",
+    "width" : 64
+  } ],
+  "name" : "Red Hot Chili Peppers",
+  "popularity" : 72,
+  "type" : "artist",
+  "uri" : "spotify:artist:0L8ExT028jH3ddEcZwqJJ5"
+}

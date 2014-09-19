@@ -1,0 +1,29 @@
+afpa_calculette_add:
+    path: /calc/add/{a}/{b}
+    defaults: { _controller: AfpaCalculetteBundle:Default:add }
+    requirements:
+        a: ^[-]?\d+[^.\d+]?
+        b: ^[-]?\d+[^.\d+]?
+afpa_calculette_sou:
+    path: /calc/sou/{a}/{b}
+    defaults: { _controller: AfpaCalculetteBundle:Default:sou }
+    requirements:
+        a: ^[-]?\d+[^.\d+]?
+        b: ^[-]?\d+[^.\d+]?
+afpa_calculette_mul:
+    path: /calc/mul/{a}/{b}
+    defaults: { _controller: AfpaCalculetteBundle:Default:mul }
+    requirements:
+        a: ^[-]?\d+[^.\d+]?
+        b: ^[-]?\d+[^.\d+]?
+afpa_calculette_div:
+    path: /calc/div/{a}/{b}
+    defaults: { _controller: AfpaCalculetteBundle:Default:div }
+    requirements: 
+        a: ^[-]?\d+[^.\d+]?
+        b: ^[-]?\d+[^.\d+]?
+afpa_calculette_fac:
+    path: /calc/fac/{a}
+    defaults: { _controller: AfpaCalculetteBundle:Default:fac }
+    requirements: 
+        a: \d+

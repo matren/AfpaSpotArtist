@@ -1,0 +1,83 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{{parent()}} - {{artist.artists.items.0.name}}{% endblock %}
+
+{% block pad_wrapper %}
+	<div class="row header">
+		<div class="col-md-12">
+			<h3 class="nomGroupe">{{artist.artists.items.0.name}}&nbsp;&nbsp;&nbsp;</h3>
+			<a href="{{ path('afpa_artist_save_name',{'name': artist.artists.items.0.name })}}" class="btn-flat success">Save Artist</a>
+		</div>                
+	</div>
+	<!-- gallery wrapper -->
+	<div class="gallery-wrapper">
+		<div class="row gallery-row">
+			<!-- single image -->
+			<div class="col-md-3 img-container">
+				<div class="img-box">
+					<span class="icon edit">
+						<a data-toggle="modal" href="#myModal"><i class="gallery-edit"></i></a>
+					</span>
+					<span class="icon trash">
+						<i class="gallery-trash"></i>
+					</span>
+					<img src="{{artist.artists.items.0.images.2.url}}" class="img-responsive" alt="picture" />
+					<p class="title">
+						{{artist.artists.items.0.name}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end gallery wrapper -->
+	<!-- affichage des genres d'un artiste -->
+	<div>
+		<h4>
+			<ul>
+				{% for genre in artist.artists.items.0.genres %}
+					<li><em>&nbsp;&nbsp;&nbsp;&nbsp;{{genre}}</em></li>
+				{% else %}
+					<li><em>Aucun genre défini</em></li>
+				{% endfor %}
+			</ul>
+			<br/>
+		</h4>
+	</div>
+	
+	<!--  afficher les albums de l'artiste -->
+	<h3><em>Albums</em></h3>
+	<div class="profile-box-col-md-4">
+		<h4>
+			<ul>
+				{% for titre in album.albums.items %}
+					<li>
+						<img src="{{titre.images.2.url}}" class="img-responsive" alt="picture" />
+						<a href="{{ path('afpa_artist_save_album',{'name': titre.name })}}" class="btn-flat success">Enregistrer</a>
+						<em>&nbsp;&nbsp;&nbsp;&nbsp;{{titre.name}}</em>
+					</li>
+				{% endfor %}
+			</ul>
+			<br/>
+		</h4>
+	</div>
+	-->
+	{{artist.artists.items.0.popularity|boostPop}}
+	<div class="row">
+		<!-- knob wrapper -->
+		<div class="col-md-5 knobs">
+					<div class="knob-wrapper">
+						<input type="text" value="{{artist.artists.items.0.popularity}}" class="knob" data-readOnly=true data-thickness=".3" data-inputColor="#333" data-fgColor="#30a1ec" data-bgColor="#d4ecfd" data-width="150">
+						<div class="info">
+							<div class="param">
+								<b><em>&nbsp;&nbsp;&nbsp;&nbsp;Popularité du groupe</em></b>
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+	<div class="row">
+		<h5>
+			<a href="{{artist.artists.items.0.external_urls.spotify}}">Voir sur spotify</a>
+		</h5>
+	</div>
+{% endblock %}

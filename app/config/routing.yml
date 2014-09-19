@@ -1,0 +1,12 @@
+afpaartist:
+    resource: "@AfpaartistBundle/Resources/config/routing.yml"
+    prefix:   /
+
+afpa_calculette:
+    resource: "@AfpaCalculetteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+afpa_color:
+    resource: "@AfpaColorBundle/Resources/config/routing.yml"
+    prefix:   /
+

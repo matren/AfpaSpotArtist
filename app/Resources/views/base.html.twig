@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}Détail Groupe{% endblock %}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/bootstrap/bootstrap.css') }}" type="text/css" />
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/bootstrap/bootstrap-overrides.css') }}" type="text/css" />
+		
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/lib/jquery-ui-1.10.2.custom.css') }}" type="text/css" />
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/lib/font-awesome.css') }}" type="text/css" />
+		
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/compiled/layout.css') }}" type="text/css" />
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/compiled/elements.css') }}" type="text/css" />
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/compiled/icons.css') }}" type="text/css" />
+		<link rel="stylesheet" href="{{ asset('bundles/afpaartist/css/compiled/index.css') }}" type="text/css" />
+	</head>
+	
+	<body>
+		<!-- navbar -->
+		<header class="navbar navbar-inverse" role="banner">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="{{asset('bundles/afpaartist/img/logo.png')}}" alt="logo" /></a>
+			</div>
+		</header>
+		<!-- end navbar -->
+		<!-- sidebar -->
+		<div id="sidebar-nav">
+			<ul id="dashboard-menu">
+				<li>                
+					<a href="index.html">
+						<i class="icon-home"></i>
+						<span>Home</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- end sidebar -->
+		<!-- main container -->
+		<div class="content">
+			<div id="pad-wrapper" class="gallery">
+				{% block pad_wrapper %}{% endblock %}
+			</div>
+		</div>
+		<!-- end main container-->
+		
+		<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="{{asset('bundles/afpaartist/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('bundles/afpaartist/js/jquery-ui-1.10.2.custom.min.js')}}"></script>
+    <!-- knob -->
+    <script src="{{asset('bundles/afpaartist/js/jquery.knob.js')}}"></script>
+	
+    <script src="{{asset('bundles/afpaartist/js/theme.js')}}"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            // jQuery Knobs
+            $(".knob").knob();
+		});
+	</script>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54902003-1', {'cookieDomain': 'none'});
+  ga('send', 'pageview');
+
+</script>
+
+	
+	</body>
+</html>

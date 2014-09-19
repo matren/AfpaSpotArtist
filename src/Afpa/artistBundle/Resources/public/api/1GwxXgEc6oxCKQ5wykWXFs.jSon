@@ -1,0 +1,29 @@
+{
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/artist/1GwxXgEc6oxCKQ5wykWXFs"
+  },
+  "genres" : [ ],
+  "href" : "https://api.spotify.com/v1/artists/1GwxXgEc6oxCKQ5wykWXFs",
+  "id" : "1GwxXgEc6oxCKQ5wykWXFs",
+  "images" : [ {
+    "height" : 1138,
+    "url" : "https://i.scdn.co/image/fe3268a0b20af661f9c3657e31ebc7073da87f37",
+    "width" : 1000
+  }, {
+    "height" : 728,
+    "url" : "https://i.scdn.co/image/4301a579cdee987398222c1169e4d133ab36ecdd",
+    "width" : 640
+  }, {
+    "height" : 228,
+    "url" : "https://i.scdn.co/image/92b66e242a62ff05dd794c883530540396f9e387",
+    "width" : 200
+  }, {
+    "height" : 73,
+    "url" : "https://i.scdn.co/image/1b883edbf390af8a879be1563a7dd83acc52aca2",
+    "width" : 64
+  } ],
+  "name" : "Prodigy",
+  "popularity" : 48,
+  "type" : "artist",
+  "uri" : "spotify:artist:1GwxXgEc6oxCKQ5wykWXFs"
+}

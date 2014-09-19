@@ -1,0 +1,29 @@
+{
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/artist/1fBcQOi8yEfWN7fknMoqIE"
+  },
+  "genres" : [ "reggae fusion" ],
+  "href" : "https://api.spotify.com/v1/artists/1fBcQOi8yEfWN7fknMoqIE",
+  "id" : "1fBcQOi8yEfWN7fknMoqIE",
+  "images" : [ {
+    "height" : 703,
+    "url" : "https://i.scdn.co/image/c098cebacf5cbdb14dda6a09b7c7e34d6efaaecb",
+    "width" : 1000
+  }, {
+    "height" : 450,
+    "url" : "https://i.scdn.co/image/7d1f60c36f99076e9a5c781370480c9e6bfcd878",
+    "width" : 640
+  }, {
+    "height" : 141,
+    "url" : "https://i.scdn.co/image/a20dcf0e2a1d0cedd0566293e05c62ba6373ebb4",
+    "width" : 200
+  }, {
+    "height" : 45,
+    "url" : "https://i.scdn.co/image/4e63e646e3b5d06c2e8f0f8d7b296657204a7aa3",
+    "width" : 64
+  } ],
+  "name" : "Patrice",
+  "popularity" : 51,
+  "type" : "artist",
+  "uri" : "spotify:artist:1fBcQOi8yEfWN7fknMoqIE"
+}

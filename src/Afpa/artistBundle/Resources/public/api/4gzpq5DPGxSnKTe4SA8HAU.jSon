@@ -1,0 +1,29 @@
+{
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+  },
+  "genres" : [ ],
+  "href" : "https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU",
+  "id" : "4gzpq5DPGxSnKTe4SA8HAU",
+  "images" : [ {
+    "height" : 789,
+    "url" : "https://i.scdn.co/image/e3ae1a103399952e72ec9a76bbd69cf4a8f960f6",
+    "width" : 779
+  }, {
+    "height" : 648,
+    "url" : "https://i.scdn.co/image/68e20f364ba16a4386d8f55ca6bed5fb8da3136d",
+    "width" : 640
+  }, {
+    "height" : 203,
+    "url" : "https://i.scdn.co/image/8e68acfb185a7370a3c4efdbdd42b3e1a5c82ac8",
+    "width" : 200
+  }, {
+    "height" : 65,
+    "url" : "https://i.scdn.co/image/a86ea149077b22239f41e8b17f7261c475b084ee",
+    "width" : 64
+  } ],
+  "name" : "Coldplay",
+  "popularity" : 88,
+  "type" : "artist",
+  "uri" : "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
+}

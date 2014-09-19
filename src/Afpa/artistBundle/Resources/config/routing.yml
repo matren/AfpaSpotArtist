@@ -1,0 +1,12 @@
+#afpaartist_homepage:
+#    path:     /hello/{name}
+#    defaults: { _controller: AfpaartistBundle:Default:index }
+afpa_artist_name:
+    path: /artist/{name}
+    defaults: { _controller: AfpaartistBundle:Default:view }
+afpa_artist_save_name:
+    path: /artist/save/{name}
+    defaults: { _controller: AfpaartistBundle:Default:save}
+afpa_artist_save_album:
+    path: /album/save/{name}
+    defaults: { _controller: AfpaartistBundle:Default:saveAlbum}

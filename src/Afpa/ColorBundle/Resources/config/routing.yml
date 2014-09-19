@@ -1,0 +1,3 @@
+afpa_color_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AfpaColorBundle:Default:index }
